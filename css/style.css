@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    font-family: Nunito;
+}
+
+i:hover, a:hover{ 
+    color: #fed7aa;
+}
+
+
+img{
+    width: 100%;
+}
+
+h1{
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #431407;
+}
+
+h2{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+h3{
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+p{
+    font-weight: 400;
+}
+
+a{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff7ed;
+    margin-left: 1rem;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem ;
+    background-color: #9a3412;
+    color: #fff7ed;
+}
+
+    .fa-bars::before{
+        display:none;
+    }
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.item{
+    border-radius: 30px;
+    border-color: #fed7aa;
+    border-style: solid;
+    padding: 1rem;
+}
+
+
+.intro{
+    text-align: center;
+    padding: 10% 20%;
+    background-color: #ffedd5;
+}
+
+
+.intro img{
+    width: 60%;
+}
+
+.about{
+    background-color: #f97316;
+    padding: 10% 20%;
+    text-align: justify;
+    color: #fff7ed;
+}
+
+.about h1{
+    color: #fff7ed;
+}
+
+.about p{
+    padding: 0 5% ;
+}
+
+.port{
+    padding: 5rem;
+}
+
+    .port .row{
+        gap: 2rem;
+    }
+
+    .port h1{
+        margin-bottom: 1rem;
+    }
+
+.contact{
+    padding: 10%;
+}
+
+
+.contact form{
+    width: 40%;
+}
+
+.contact form input, .contact form textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-color: #9a3412;
+    color: #7c2d12;
+}
+
+.contact form textarea{
+    max-width: 100%;
+    border-width: 2px;
+}
+.contact form input:focus, .contact form textarea:focus{
+    border-color: unset;
+}
+
+.contact form input::placeholder, .contact form textarea::placeholder{
+    color:  #431407;
+}
+
+.contact form .btn{
+    background-color: unset;
+    border: none;
+    background-color: #fed7aa;
+    border-radius: 0.5rem;
+}
+
+    .contact form .btn:hover{
+        opacity: 75%;
+        color:#c2400c9f ;
+    }
+
+
+.foot{
+    background-color: #c2410c;
+    align-items: flex-start;
+    padding: 3rem;
+    justify-content: space-between;
+    color: #ffedd5;
+    margin: 0;
+}
+
+.foot article{
+    width: 40%;
+    height: 100%;
+    text-align: center;
+}
+
+.fin{
+    text-align: center;
+    background-color: #431407;
+    padding: 1rem;
+    color: #fff7ed;
+}
+
+
+@media (max-width:800px){
+    .about, .contact{
+        padding: 10%;
+    }
+
+    .contact form{
+        width: 80%;
+    }
+
+    .port{
+        padding: 10% 5%;
+    }
+
+    .fa-bars::before{
+        display:inline-block;
+    }
+
+
+    header nav{
+        display: none;
+    }
+
+}
